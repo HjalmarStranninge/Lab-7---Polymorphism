@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Drawing;
 
 namespace Lab_7___Polymorphism
 {
@@ -12,6 +13,8 @@ namespace Lab_7___Polymorphism
             var square = new Square();
             Console.WriteLine($"Area fyrkant: {square.Area()}");
 
+            var circle = new Circle();
+            Console.WriteLine($"Area cirkel: {circle.Area()}");
         }
 
         //Defining parent class 'Geometry'
@@ -59,5 +62,23 @@ namespace Lab_7___Polymorphism
                 return Side * Side;
             }
         }
+
+        //Third subclass 'Circle'
+        public class Circle: Geometry
+        {
+            public double Radius { get;set; }
+
+            public Circle()
+            {
+                Radius = 18.1;
+            }
+
+            //Method for calculating the area of a circle
+            public override double Area()
+            {
+                return (2*Radius) * Math.PI;
+            }
+        }
+
     }
 }
