@@ -6,8 +6,12 @@ namespace Lab_7___Polymorphism
     {
         static void Main(string[] args)
         {
-         var rectangle = new Rectangle();
-            Console.WriteLine(rectangle.Area());
+            var rectangle = new Rectangle();
+            Console.WriteLine($"Area rektangel: {rectangle.Area()}");
+
+            var square = new Square();
+            Console.WriteLine($"Area fyrkant: {square.Area()}");
+
         }
 
         //Defining parent class 'Geometry'
@@ -37,6 +41,22 @@ namespace Lab_7___Polymorphism
             public override double Area()
             {              
                 return Length*Width;
+            }
+        }
+
+        //Second subclass 'Square'
+        public class Square: Geometry
+        {
+            public double Side { get;set; }
+
+            public Square()
+            {
+                Side = 14;
+            }
+            //Essentially the same as the method for rectangle
+            public override double Area()
+            {
+                return Side * Side;
             }
         }
     }
