@@ -9,19 +9,19 @@ namespace Lab_7___Polymorphism
         //decimals printed to 2
         static void Main(string[] args)
         {
-            var rectangle = new Rectangle();
+            Geometry rectangle = new Rectangle();
             Console.WriteLine($"Area rektangel: {Math.Round(rectangle.Area(), 2)}");
 
-            var square = new Square();
+            Geometry square = new Square();
             Console.WriteLine($"Area fyrkant: {Math.Round(square.Area(), 2)}");
 
-            var circle = new Circle();
+            Geometry circle = new Circle();
             Console.WriteLine($"Area cirkel: {Math.Round(circle.Area(), 2)}");
 
-            var parallelogram = new Parallelogram();
+            Geometry parallelogram = new Parallelogram();
             Console.WriteLine($"Area parallellogram: {Math.Round(parallelogram.Area(), 2)}");
 
-            var ellipse = new Ellipse();
+            Geometry ellipse = new Ellipse();
             Console.WriteLine($"Area ellips: {Math.Round(ellipse.Area(), 2)}");
         }
 
