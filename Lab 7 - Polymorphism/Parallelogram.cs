@@ -25,3 +25,4 @@ namespace Lab_7___Polymorphism
             return Base * Height;
         }
     }
+}

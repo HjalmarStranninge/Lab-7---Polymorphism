@@ -15,14 +15,14 @@ namespace Lab_7___Polymorphism
 
         public Ellipse()
         {
-            RadiusLong = 32;
-            RadiusShort = 20;
+            RadiusLong = 22;
+            RadiusShort = 10;
         }
 
         //Method for calculating the area
         public override double Area()
         {
-            return (RadiusLong * RadiusShort) * Math.PI;
+            return RadiusLong * RadiusShort * Math.PI;
         }
     }
 }
