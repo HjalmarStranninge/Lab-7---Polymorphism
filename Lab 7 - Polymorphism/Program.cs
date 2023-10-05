@@ -10,19 +10,19 @@ namespace Lab_7___Polymorphism
         static void Main(string[] args)
         {
             Geometry rectangle = new Rectangle();
-            Console.WriteLine($"Area rektangel: {Math.Round(rectangle.Area(), 2)}");
+            Console.WriteLine($"Area rectangle: {Math.Round(rectangle.Area(), 2)}");
 
             Geometry square = new Square();
-            Console.WriteLine($"Area fyrkant: {Math.Round(square.Area(), 2)}");
+            Console.WriteLine($"Area square: {Math.Round(square.Area(), 2)}");
 
             Geometry circle = new Circle();
-            Console.WriteLine($"Area cirkel: {Math.Round(circle.Area(), 2)}");
+            Console.WriteLine($"Area circle: {Math.Round(circle.Area(), 2)}");
 
             Geometry parallelogram = new Parallelogram();
-            Console.WriteLine($"Area parallellogram: {Math.Round(parallelogram.Area(), 2)}");
+            Console.WriteLine($"Area parallelogram: {Math.Round(parallelogram.Area(), 2)}");
 
             Geometry ellipse = new Ellipse();
-            Console.WriteLine($"Area ellips: {Math.Round(ellipse.Area(), 2)}");
+            Console.WriteLine($"Area ellipse: {Math.Round(ellipse.Area(), 2)}");
         }
     }
 } 
