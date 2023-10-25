@@ -19,7 +19,7 @@ namespace Lab_7___Polymorphism
         //Method for calculating the area of a circle
         public override double Area()
         {
-            return (2 * Radius) * Math.PI;
+            return (Radius * Radius) * Math.PI;
         }
     }
 }
